@@ -42,12 +42,10 @@ attr_accessor :name, :grade, :id
   end
   
   def self.new_from_db(row)
-    new_student = 
-    new_student.id = row[0]
-    new_student.name = row[1]
-    new_student.grade[2]
-    new_student
-    self.new()
+    id = row[0]
+    name = row[1]
+    grade[2]
+    self.new(id, name, grade)
   end
 
 end
