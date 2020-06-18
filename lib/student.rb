@@ -31,7 +31,7 @@ attr_reader :id
      SQL
      
      DB[:conn].execute(sql, self.name, self.grade)
-     @id = DB[:conn]execute("SELECT ")
+     @id = DB[:conn]execute("SELECT last_insert_rowID")
   end
 
 end
