@@ -63,5 +63,9 @@ attr_accessor :name, :grade, :id
       WHERE id = ?"
       DB[:conn].execute(sql, self.name, self.grade, self.id)
     end
+    
+    def self.drop_table
+      
+    end
 
 end
