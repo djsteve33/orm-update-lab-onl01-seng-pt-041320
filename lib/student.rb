@@ -54,7 +54,6 @@ attr_accessor :name, :grade, :id
     WHERE name = ?"
     result = DB[:conn].execute(sql, name).map {|row|
       self.new_from_db(row)}.first
-    Sudent.new
-  end
+    end
 
 end
