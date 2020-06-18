@@ -22,7 +22,7 @@ attr_reader :id
   end
   
   def save
-    
+   if self.id 
   end
 
 end
