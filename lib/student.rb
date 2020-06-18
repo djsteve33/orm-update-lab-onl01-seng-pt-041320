@@ -17,6 +17,8 @@ attr_reader :id
     name TEXT,
     grade INTEGER)
     SQL
+    
+    
   end
 
 end
