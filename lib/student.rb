@@ -52,7 +52,8 @@ attr_accessor :name, :grade, :id
     sql = "SELECT *
     FROM students
     WHERE name = ?"
-    result = DB[:connect].execute(sql, name).map
+    result = DB[:conn].execute(sql, name).map do |row|
+      
     Sudent.new
   end
 
