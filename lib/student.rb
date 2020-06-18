@@ -52,7 +52,7 @@ attr_accessor :name, :grade, :id
     sql = "SELECT *
     FROM students
     WHERE name = ?"
-    
+    result = DB[:connect].execute(sql, name)
   end
 
 end
