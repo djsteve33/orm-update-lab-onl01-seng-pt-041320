@@ -53,7 +53,7 @@ attr_accessor :name, :grade, :id
     FROM students
     WHERE name = ?"
     result = DB[:conn].execute(sql, name).map do |row|
-      
+      self.new_from_db(row)
     Sudent.new
   end
 
