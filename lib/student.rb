@@ -66,6 +66,8 @@ attr_accessor :name, :grade, :id
     
     def self.drop_table
       sql = <<-SQL 
+      DROP TABLE students
+      SQL
       
     end
 
