@@ -57,7 +57,8 @@ attr_accessor :name, :grade, :id
     end
     
     def update
-      sql = "UPDATE"
+      sql = "UPDATE students
+      SET "
     end
 
 end
