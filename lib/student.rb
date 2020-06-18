@@ -61,7 +61,7 @@ attr_accessor :name, :grade, :id
       SET name = ?
       SET grade = ?
       WHERE id = ?"
-      DB[:conn].execute(sql, self.name, self.grade)
+      DB[:conn].execute(sql, self.name, self.grade, self.id)
     end
 
 end
