@@ -24,6 +24,8 @@ attr_reader :id
   def save
    if self.id 
      self.update
+   else 
+     
   end
 
 end
