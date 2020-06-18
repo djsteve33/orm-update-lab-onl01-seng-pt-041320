@@ -59,7 +59,7 @@ attr_accessor :name, :grade, :id
     def update
       sql = "UPDATE students
       SET name = ?
-      SET grade = ?
+      grade = ?
       WHERE id = ?"
       DB[:conn].execute(sql, self.name, self.grade, self.id)
     end
