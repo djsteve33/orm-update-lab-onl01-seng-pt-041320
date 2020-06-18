@@ -12,7 +12,7 @@ attr_reader :id
   
   def self.create_table
     sql = <<-SQL
-    
+    CREATE TABLE
     SQL
   end
 
