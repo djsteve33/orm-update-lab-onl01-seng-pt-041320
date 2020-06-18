@@ -25,6 +25,7 @@ attr_reader :id
    if self.id 
      self.update
    else 
+     sql = <<-SQL
      
   end
 
