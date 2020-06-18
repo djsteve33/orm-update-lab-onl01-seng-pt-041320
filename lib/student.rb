@@ -55,5 +55,7 @@ attr_accessor :name, :grade, :id
     result = DB[:conn].execute(sql, name).map {|row|
       self.new_from_db(row)}.first
     end
+    
+    def 
 
 end
