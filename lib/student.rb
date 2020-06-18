@@ -43,7 +43,7 @@ attr_accessor :name, :grade, :id
   
   def self.new_from_db(row)
     new_student = self.new
-    
+    new_student.id = 
   end
 
 end
